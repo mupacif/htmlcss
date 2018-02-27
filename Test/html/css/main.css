@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+@font-face{
+    font-family: "Indie Flower";
+    src:url("https://fonts.googleapis.com/css?family=Indie+Flower") format("truetype");
+
+}
+
+
+@font-face{
+    font-family: "Shadows Into Light";
+    src:url("../font/ShadowsIntoLight.ttf") format("truetype");
+}
+
+body{
+    margin: 10px;
+}
+#first{
+    color: red;
+    border: 1px solid blue;
+    border-radius: 0 10px 30px 60px;
+    background-color: aqua;
+    width: 100px;
+    text-align: center;
+}
+
+.blackblock
+{
+        border: 1px solid red;
+        background-color: grey;
+        padding: 5px;
+    border-radius: 10px;
+    margin: 10px 0 10px;
+}
+
+#troiD{
+    text-shadow:-2px 0px 0px red,2px 0px 0px cyan;
+
+}
+#box
+{
+    border:2px solid red;
+    padding: 5px;
+    box-shadow : 0px 3px 10px black;
+    background-color:grey;
+}
+
+
+#font1{
+    font-family: 'Indie Flower',recursive;
+}
+#font2{
+    font-family: 'Pacifico',recursive;
+}
+#font3{
+    font-family: 'Shadows Into Light',recursive;
+}
+
+#container {
+    display: flex;
+    border: 1px solid black;
+    justify-content: flex-end;
+    height: 300px;
+    align-items: center;
+}
+
+#box1{
+    flex
+     background-color: pink;
+     width: 100px;
+     height: 100px;
+ }
+#box2{
+    background-color: dodgerblue;
+    width: 100px;
+    height: 100px;
+}
+#box3{
+    background-color: green;
+    width: 100px;
+    height: 100px;
+}

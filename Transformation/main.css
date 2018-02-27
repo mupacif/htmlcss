@@ -1,0 +1,7 @@
+h2{
+    transform: scaleX(1.5);
+}
+h1{
+    transform: scaleX(1.4);
+    background-color: pink;
+}

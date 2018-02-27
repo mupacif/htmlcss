@@ -1,0 +1,79 @@
+body
+{
+    background-image:  url("images/fd-14.jpg");
+}
+#container
+{
+    width: 70%;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 0 50px 0 50px;
+    background-color: white;
+}
+
+nav
+{
+    background-color: grey;
+    border: 1px solid black;
+}
+nav a{
+    text-decoration: none;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+nav li{
+    padding: 10px;
+}
+
+nav li:first-child a{
+    color: green;
+}
+nav li:nth-child(2) a{
+    color: orange;
+}
+nav li:last-child a{
+    color: cyan;
+}
+
+
+p:first-letter{
+    font-size: 2em;
+    color: red;
+}
+
+
+section
+{
+width: 70%;
+    display: inline-block;
+    padding-right: 10px;
+}
+aside
+{
+    width: 20%;
+    display: inline-block;
+}
+p{
+    text-align: justify;
+}
+p:first-line{
+    font-weight: bold;
+}
+img:first-child{
+    border-bottom: 5px solid blue;
+}
+img:nth-child(n+2)
+{
+    border-bottom: 5px solid green;
+}
+img:nth-child(4n)
+{
+    border-bottom: 5px solid blue;
+}
+
+img:nth-child(6)
+{
+    border-bottom: 5px solid red;
+}
