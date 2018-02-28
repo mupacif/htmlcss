@@ -59,24 +59,27 @@ body{
 #container {
     display: flex;
     border: 1px solid black;
-    justify-content: flex-end;
     height: 300px;
-    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 #box1{
-    flex
      background-color: pink;
      width: 100px;
      height: 100px;
+
  }
 #box2{
     background-color: dodgerblue;
     width: 100px;
     height: 100px;
+
 }
 #box3{
     background-color: green;
     width: 100px;
     height: 100px;
+    flex: 1;
+
 }

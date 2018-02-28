@@ -1,7 +1,170 @@
-h2{
-    transform: scaleX(1.5);
+body{
+    width: 80%;
+    margin: 0 auto;
 }
-h1{
-    transform: scaleX(1.4);
+
+.ex1 h2{
+    transform: scale(1,1);
+}
+.ex1 h1{
+    transform: scale(1,2);
     background-color: pink;
 }
+
+
+
+.ex2 div{
+    transform: skew(30deg,0deg);
+    background-color: yellow;
+    text-align: center;
+    height: 100px;
+    padding-top: 50px;
+}
+
+
+.ex3 p{
+    transform: translate(100px,100px);
+    background-color: blue;
+    text-align: center;
+    width: 100px;
+}
+/**
+*  photo
+ */
+.ex4 div{
+    display: inline-block;
+    box-shadow: 6px 6px 10px black;
+    background-color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+.ex4 div:nth-child(2)
+{
+    transform: rotate(9deg);
+}
+.ex4 div:nth-child(3)
+{
+    transform: rotate(-9deg);
+}
+
+
+.ex4 div:nth-child(4)
+{
+    transform: rotate(9deg);
+    transition: all 1s ease;
+}
+
+.ex4 div:nth-child(4):hover
+{
+    transform: rotate(-9deg);
+    transition: all 1s ease;
+}
+
+/**
+*  translation
+ */
+
+.ex5 h1:hover{
+    color: greenyellow;
+    transition: all 1s ease;
+    padding: 5px;
+}
+.ex5 h1{
+    transition: all 1s ease;
+}
+
+.ex5 div:hover{
+      background-color: red;
+      transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+      padding: 5px;
+  }
+
+.ex5 div{
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/**
+ex 5 recapitulatif
+ */
+
+#ex6
+{
+    border: 1px solid black;
+    display: flex;
+    padding: 10px;
+
+}
+
+#ex6 #left{
+    flex: 1;
+    margin-right: 10px;
+
+}
+
+#ex6 #left #title{
+    border: 1px solid black;
+}
+
+#ex6 #left #title h1:first-child:hover{
+    color: red;
+    transition: all 1s ease-in;
+}
+#ex6 #left #title h1:first-child{
+    transition: all 1s ease-in;
+}
+
+#ex6 #left #article{
+    border: 1px solid black;
+}
+
+#ex6 #right{
+    flex: 1;
+    height: auto;
+}
+
+#ex6 #right #images{
+    border: 1px solid black;
+    margin-bottom: 55px;
+    padding: 10px;
+    text-align: center;
+}
+
+#ex6 #right #images img{
+
+transition: all 1s ease-in;
+}
+#ex6 #right #images img:hover{
+    transform: rotate(30deg);
+    transition: all 1s ease-in;
+}
+/**
+ TRANSITION SUR L4IMAGE
+ */
+
+
+#ex6 #right #credit img:nth-child(2){
+    position: relative;
+    transition: all 1s ease-in;
+    border: 1px solid black;
+}
+#ex6 #right #credit img
+{
+    position: absolute;
+
+}
+#ex6 #right #credit img:hover
+{
+    opacity: 0;
+    transition: all 1s ease-in;
+}
+
+
+
+#ex6 #right #credit{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+

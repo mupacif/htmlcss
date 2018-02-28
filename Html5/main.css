@@ -1,0 +1,87 @@
+#container
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#main
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+
+header{
+    background-color: orange;
+}
+nav
+{
+    background-color: yellow;
+    flex: 1;
+    height: 100px;
+    margin-right:  10px;
+}
+#sections
+{
+    flex: 3;
+
+}
+section
+{
+    padding: 10px;
+    background-color: grey;
+    margin-bottom: 10px;
+    justify-content: flex-end;
+    min-height: 300px;
+    text-align: center;
+}
+
+
+article{
+    float: left;
+    width: 70%;
+    background-color: dodgerblue;
+    min-height: 200px;
+    display: block;
+    margin-right: 20px;
+
+}
+.asides
+{
+    float: right;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+aside
+{
+    background-color: red;
+    margin-bottom: 10px;
+    height: 200px;
+
+}
+
+footer{
+    background-color: green;
+    height: 100px;
+}
+
+summary{
+    background-color: red;
+    border-radius: 30px 30px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+/* Change the color and size of the marker. */
+summary::-webkit-details-marker {display: none; }
+details summary::before { content:"+";color:yellow; }
+details[open] summary::before { content:"-";
+color:yellow;}
+
+details > summary:first-of-type{
+    list-style-type: none;
+}
+
