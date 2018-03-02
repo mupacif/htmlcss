@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div id="container">
+    <form  action="#" method="post">
+    <h2> Step 1 : your details</h2>
+
+    <div class="inputs"><label for="name">Name:</label><input type="text" name="name" id="name" placeholder="First and last name"></div>
+    <div class="inputs"><label for="email">Email:</label><input type="email" name="email" id="email" placeholder="example@domain.col"></div>
+    <div class="inputs"><label for="tel">Phone:</label><input type="tel" name="tel" id="tel" placeholder="+324760000000"></div>
+
+
+    <h2> Step 2 : Delivery adress</h2>
+    <div class="inputs"><label for="adress">Adress:</label><textarea name="adress" id="adress"></textarea></div>
+    <div class="inputs"><label for="postcode">Post code:</label><input type="number" name="postcode" id="postcode" min="1000" max="9999"></div>
+    <div class="inputs"><label for="country"> Country : </label><input list="countries" name="country" id="country"></div>
+        <datalist id="countries">
+            <option value="Belgium">
+            <option value="France">
+            <option value="USA">
+            <option value="Russia">
+        </datalist>
+    <h2>Step 3 : Card details</h2>
+        <div class="inputs">
+    <h4> Card type :</h4>
+    <input type="radio" name="payment_method" id="visa" value="visa"><label for="visa"><img src="bank/visa.jpg"
+                                                                                            height="17" width="36"/>Visa</label>
+    <input type="radio" name="payment_method" id="Amex" value="Amex"><label for="Amex"><img src="bank/amex.jpg"
+                                                                                            height="17" width="31"/>Amex</label>
+    <input type="radio" name="payment_method" id="MasterCard" value="MasterCard"><label for="MasterCard"><img
+                src="bank/mc.jpg" height="17" width="31"/>Mastercard</label></div>
+
+    <div class="inputs"><label for="card_number">Card number:</label><input type="number" name="card_number" id="card_number"></div>
+    <div class="inputs"><label for="card_security">Security code:</label><input type="text" name="card_security" id="card_security"></div>
+    <div class="inputs"><label for="card_name">Name on card:</label><input type="text" name="card_name" id="card_name"></div>
+
+        <input type="submit" value="Submit" id="submit">
+    </form>
+</div>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+</body>
+</html>

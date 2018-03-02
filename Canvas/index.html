@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <style>
+        canvas
+        {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<canvas>
+
+</canvas>
+<script>
+    var canvas = document.querySelector("canvas");
+    var ctx = canvas.getContext("2d");
+
+
+    /***
+     * dapeau suisse
+     * @param ctx
+     * @param x
+     * @param y
+     * @param w
+     * @param h
+     */
+    function suisse(ctx,x,y,w,h)
+{
+    var idx = 3;
+    var idr = 0.2;
+    ctx.rect(x,y,w,h);
+    ctx.stroke();
+    ctx.fillStyle = "red";
+    ctx.fillRect(x+idx,y+idx,w-idx*2,h-idx*2);
+    ctx.fillStyle="white";
+    ctx.fillRect(x+w/2-idx*2,y+idx*2, w*idr,h*(1-idr/2));
+    ctx.fillRect(y+idx*2,x+w/2-idx*2,h*(1-idr/2)-idx*2, w*idr);
+
+
+}
+
+function drawArc(ctx, x,y,rayon,angleDebut,angleFin)
+    {
+        ctx.arc(x,y,rayon,angleDebut,angleFin);
+        ctx.stroke();
+    }
+    function toRad(deg) {
+            return deg*Math.PI/180;
+    }
+    drawArc(ctx,50,50,100,toRad(0),toRad(45))
+    ctx.moveTo(15,15)
+    drawArc(ctx,0,0,100,toRad(0),toRad(45))
+
+
+function f(ctx,x,y,x2,y2,rayon) {
+
+ctx.arcTo(x,y,x2,y2,rayon)
+ctx.stroke();
+
+}
+
+f(0,0,200,200,100)
+</script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+body,html
+{
+    height:100vh;
+}
+
+#container
+{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 20px 20px;
+    height: 90%;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid black;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+header ul li{
+    display: inline;
+    padding: 0 10px 0 10px;
+}
+section{
+    border-bottom: 1px solid black;
+    height: 100%;
+   display: flex;
+}
+section p{
+    margin: auto;
+}
+footer
+{
+    display: flex;
+    padding-left: 20px;
+    height: 10%;
+}
+footer p{
+    margin: auto;
+}

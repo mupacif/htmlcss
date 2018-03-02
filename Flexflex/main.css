@@ -1,0 +1,113 @@
+html,body
+{
+    width: 100%;
+}
+
+#container
+{
+    display: flex;
+    flex-direction: column;
+}
+
+header
+{
+    background-color: grey;
+    color: white;
+}
+
+#site_nav
+{
+    background-color: #d9d9db;
+padding-right: 20px;
+}
+#site_nav ul{
+    display: flex;
+    justify-content: space-between;
+    margin-left: -30px;
+}
+#site_nav li{
+    display: inline-flex;
+    list-style-type: none;
+    flex-shrink: 0;
+}
+
+
+#main
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#main nav
+{
+    flex: 1;
+    background-color: #e2e2e4;
+
+}
+#main nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+#main nav li{
+    display: block;
+    margin-top: 10px;
+    margin-left: -30px;
+}
+
+
+#main aside
+ {
+     flex: 1;
+    background-color: #e2e2e4;
+ }
+#main aside ul
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#main aside ul li
+{
+padding-bottom: 10px;
+    list-style-type: none;
+    margin-left: -30px;
+}
+
+#main section
+{
+    flex: 2;
+}
+
+footer
+{
+    background-color: grey;
+  text-align: center;
+    color: white;
+}
+
+@media(max-width: 640px) {
+    #main aside
+    {
+        display: none;
+    }
+
+    #main nav
+    {
+        display: none;
+    }
+
+
+    #site_nav ul{
+        display: flex;
+        justify-content: space-between;
+        margin-left: -30px;
+        flex-wrap: wrap;
+    }
+    #site_nav li{
+        display: inline-flex;
+        list-style-type: none;
+        flex-shrink: 0;
+    }
+}

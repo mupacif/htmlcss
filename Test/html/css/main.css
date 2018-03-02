@@ -83,3 +83,8 @@ body{
     flex: 1;
 
 }
+
+div[id*="box"]
+{
+    display: inline-flex;
+}

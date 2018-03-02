@@ -1,0 +1,29 @@
+#signup_form{
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.inputs
+{
+    padding-bottom: 10px;
+}
+
+input
+{
+    border-radius: 3px;
+    border: 1px solid black;
+}
+label
+{
+display: block;
+}
+section
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px;
+}

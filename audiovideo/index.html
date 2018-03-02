@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Audio</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header> <h1>My super player</h1></header>
+<section id="container">
+    <nav>
+        <ul>
+            <li ><a href="#" data-value="0" >video 1</a></li>
+            <li ><a href="#" data-value="1">video 2</a></li>
+        </ul>
+    </nav>
+    <section id="video">
+   <!---- <audio controls src="assets/music.mp3"></audio>-->
+    <video id="m_video" src="video/video1.webm" loop="loop"></video>
+        <a href="#" id="start_button">start</a>
+    </section>
+
+    <script type="text/javascript">
+        function $(elt)
+        {
+            return document.getElementById(elt);
+
+        }
+        var links=["video1.webm","video2.webm"];
+        var control = 0;
+        var m_video = $("m_video");
+
+        document.querySelectorAll("a")[0].addEventListener("click",click);
+        document.querySelectorAll("a")[1].addEventListener("click",click);
+
+
+        var start_button = $("start_button");
+        start_button.addEventListener("click",()=>
+        {
+           if(control++%2 == 0)
+        {
+            start_button.innerHTML = "plause";
+            m_video.play();
+        }else
+        {
+            start_button.innerHTML = "play";
+            m_video.pause();
+        }
+
+        })
+
+        function click(event)
+        {
+            var value=event.target.dataset.value;
+            //console.log(links[value])
+            m_video.src=`video/${links[value]}`;
+        }
+
+
+    </script>
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</section>
+</body>
+</html>
